@@ -16,7 +16,7 @@ int main()
     int count_a = 0;
     int count_b = 0;
     int count_c = 0;
-
+\
     for(int i = 0; a[i] != '\0'; i++)
         count_a++;
     for(int i = 0; b[i] != '\0'; i++)
