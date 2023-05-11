@@ -20,5 +20,5 @@ int main()
 
     cout << "--------------------" << endl;
     cout << "읽은 바이트 수는 " << count << endl;
-    fin.close();
+    fin.close(); fout.close();
 }
