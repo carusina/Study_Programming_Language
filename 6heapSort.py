@@ -5,7 +5,7 @@ def heapSort(A):                        # 리스트 A를 힙정렬
         percolateDown(A, 0, last-1)     # 리스트 A의 0부터 last-1까지 스며내리기
 
 def buildHeap(A):                           # 리스트 A를 힙으로 만듦
-    for i in range(len(A)-2 // 2, -1, -1):  # 부모노드 index들 순서대로 스며내리기
+    for i in range(len(A)-1, -1, -1):  # 부모노드 index들 순서대로 스며내리기
         percolateDown(A, i, len(A)-1)       # 리스트 A의 i부터 스며내리기
 
 def percolateDown(A, k:int, end:int):            # 리스트 A의 k부터 end까지 스며내리기
@@ -20,10 +20,11 @@ def percolateDown(A, k:int, end:int):            # 리스트 A의 k부터 end까
             
 #---------------------------------------------------------#
 
-# import random
-# A = []
-# for value in range(30):
-#     A.append(random.randint(0, 100))
-# B = A.copy()
-# heapSort(B)
-# print(B)
+import random
+A = []
+for value in range(30):
+    A.append(random.randint(0, 100))
+B = A.copy()
+heapSort(B)
+
+print(B)
